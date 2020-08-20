@@ -48,6 +48,9 @@ body {
 }
 
 .illustration {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     width: 246px;
     height: 505px;
     border: 8px solid var(--white);
@@ -95,11 +98,12 @@ img.avatar {
 .message {
     width: fit-content;
     max-width: 25ch;
-    padding: 6px 10px 6px 10px ;
+    padding: 6px 8px 6px 8px ;
     margin-bottom: 8px;
     border-radius: 10px;
     background-color: var(--white);
-    font-size: 9px;
+    font-size: 8px;
+    line-height: 11px;
 
 }
 
@@ -124,5 +128,62 @@ img.dog-photo {
     width: 40px;
     height: 40px;
     border-radius: 8px;
-    margin-left: 6px;
+    margin-left: 5px;
+}
+
+.price {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 160px;
+    height: 32px;
+    background-image: linear-gradient(to right, var(--light-magenta), var(--light-violet));
+    border-radius: 10px 10px 10px 5px ;
+    margin-bottom: 8px;
+}
+
+.price p {
+    font-size: 8px;
+    color: var(--white);
+    margin-left: 8px;
+}
+
+.price .cost {
+    font-size: 12px;
+    font-weight: 500;
+    margin-right: 16px;
+
+}
+
+.type {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 35px;
+    margin: 10px 10px;
+    background-color: var(--white);
+    border-radius: 20px;
+    color: var(--gray-blue);
+}
+
+.type p {
+    font-size: 9px;
+    margin-left: 18px;
+}
+
+.type-btn {
+    display: grid;
+    place-items: center;
+    width: 24px;
+    height: 24px;
+    color: var(--white);
+    background-color: var(--vdark-desat-violet);
+    border-radius: 50%;
+    margin-right: 5px;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.type-btn i {
+    padding-left: 2px;
 }
